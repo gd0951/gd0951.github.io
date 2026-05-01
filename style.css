@@ -1,32 +1,104 @@
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 40px;
+
+* {
+  box-sizing: border-box;
 }
 
-h1 {
-  color: #222;
-  font-size: 32px;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  color: #111;
+}
+
+/* MAIN LAYOUT */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* BRAND PANEL */
+.brand {
+  width: 35%;
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-inner {
+  text-align: left;
+  padding: 60px;
+}
+
+.brand h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+/* CONTENT PANEL */
+.content {
+  width: 65%;
+  padding: 60px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
 }
 
 p {
-  color: #555;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.6;
+  color: #444;
 }
 
-a {
+/* SERVICES */
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* CTA */
+.contact a {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 20px;
-  background-color: #000;
+  padding: 14px 24px;
+  background: #111;
   color: #fff;
   text-decoration: none;
-  border-radius: 4px;
+  font-weight: bold;
 }
 
-a:hover {
-  background-color: #333;
+/* MOBILE */
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .brand,
+  .content {
+    width: 100%;
+  }
+
+  .brand {
+    text-align: center;
+  }
 }
+``
