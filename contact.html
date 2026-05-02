@@ -4,96 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact | Brand Name</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .contact-card {
-      background: #161616;
-      padding: 40px;
-      border-radius: 12px;
-      max-width: 500px;
-      width: 90%;
-      text-align: center;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-    }
-
-    h1 {
-      margin-bottom: 8px;
-    }
-
-    p {
-      color: #bbbbbb;
-      margin-bottom: 25px;
-    }
-
-    .email-box {
-      background: #0f0f0f;
-      padding: 15px;
-      border-radius: 8px;
-      font-size: 18px;
-      margin-bottom: 25px;
-      word-break: break-word;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .buttons a {
-      text-decoration: none;
-    }
-
-    .btn {
-      padding: 10px 18px;
-      border-radius: 6px;
-      border: none;
-      font-size: 15px;
-      cursor: pointer;
-    }
-
-    .btn-primary {
-      background: #e11d48;
-      color: white;
-    }
-
-    .btn-secondary {
-      background: #2a2a2a;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="contact-card">
-    <h1>Contact</h1>
-    <p>The best way to reach me is by email.</p>
+  <div class="layout">
 
-    <div class="email-box">
-      deolgurtaj0@gmail.com
-    </div>
+    <aside class="brand">
+      <div class="brand-inner">
+        <h1>Contact</h1>
+        <p class="tagline">Let’s talk.</p>
+      </div>
+    </aside>
 
-    <div class="buttons">
-      <a href="mailto:deolgurtaj0@gmail.com?subject=Website%20Enquiry">
-        <button class="btn btn-primary">Send an email</button>
-      </a>
+    <main class="content">
+      <section>
+        <h2>Email</h2>
+        <p>You can reach me directly at:</p>
 
-      <a href="index.html">
-        <button class="btn btn-secondary">Back to site</button>
-      </a>
-    </div>
+        <p><strong>deolgurtaj0@gmail.com</strong></p>
+
+        <a href="mailto:deolgurtaj0@gmail.com" class="cta-btn">
+          Send an email
+        </a>
+      </section>
+    </main>
+
   </div>
 
 </body>
