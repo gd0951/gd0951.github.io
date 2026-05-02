@@ -5,62 +5,63 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #0f0f0f;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
 }
 
-/* MAIN LAYOUT */
+/* LAYOUT */
 .layout {
   display: flex;
   min-height: 100vh;
 }
 
-/* LEFT BRAND PANEL */
+/* LEFT BRAND PANEL (VIBRANT) */
 .brand {
   width: 35%;
-  background: #0b0b0b;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
   color: #ffffff;
   display: flex;
   align-items: center;
 }
 
 .brand-inner {
-  padding: 64px;
+  padding: 70px;
 }
 
 .brand h1 {
-  font-size: 52px;
+  font-size: 56px;
   line-height: 1.1;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .tagline {
-  font-size: 15px;
-  opacity: 0.6;
+  font-size: 16px;
+  opacity: 0.85;
+  letter-spacing: 0.4px;
 }
 
-/* RIGHT CONTENT PANEL (IMPROVED CONTRAST) */
+/* RIGHT PANEL */
 .content {
   width: 65%;
-  background: #fafafa;
-  padding: 72px 64px;
-  max-width: 720px;
+  background: #ffffff;
+  padding: 80px 70px;
+  max-width: 760px;
 }
 
 /* SECTIONS */
 section {
-  margin-bottom: 56px;
+  margin-bottom: 60px;
 }
 
 /* HEADINGS */
 h2 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   color: #111;
   margin-bottom: 14px;
 }
 
-/* BODY TEXT */
+/* TEXT */
 p {
   font-size: 17px;
   line-height: 1.6;
@@ -68,7 +69,7 @@ p {
   max-width: 560px;
 }
 
-/* SERVICES LIST */
+/* SERVICES */
 .services {
   list-style: none;
   padding: 0;
@@ -77,27 +78,39 @@ p {
 
 .services li {
   padding: 14px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
   font-size: 16px;
   color: #222;
+  transition: padding-left 0.2s ease, color 0.2s ease;
 }
 
-/* CTA BUTTON */
+.services li:hover {
+  padding-left: 6px;
+  color: #7c3aed;
+}
+
+/* CTA */
+.cta {
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
 .cta-btn {
   display: inline-block;
-  margin-top: 6px;
-  padding: 12px 28px;
-  background: #111;
+  margin-top: 10px;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
   color: #ffffff;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 999px;
   font-weight: 600;
-  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .cta-btn:hover {
-  background: #333;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(236, 72, 153, 0.45);
 }
 
 /* MOBILE */
@@ -111,7 +124,12 @@ p {
     width: 100%;
   }
 
+  .brand-inner {
+    padding: 48px;
+  }
+
   .content {
     padding: 48px 28px;
   }
 }
+
