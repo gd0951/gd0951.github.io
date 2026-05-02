@@ -7,7 +7,6 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: #0f0f0f;
-  color: #111;
 }
 
 /* MAIN LAYOUT */
@@ -16,7 +15,7 @@ body {
   min-height: 100vh;
 }
 
-/* LEFT PANEL */
+/* LEFT BRAND PANEL */
 .brand {
   width: 35%;
   background: #0b0b0b;
@@ -26,29 +25,29 @@ body {
 }
 
 .brand-inner {
-  padding: 60px;
+  padding: 64px;
 }
 
 .brand h1 {
-  font-size: 48px;
+  font-size: 52px;
   line-height: 1.1;
   margin-bottom: 12px;
 }
 
 .tagline {
-  opacity: 0.6;
   font-size: 15px;
+  opacity: 0.6;
 }
 
-/* RIGHT PANEL – IMPROVED CONTRAST */
+/* RIGHT CONTENT PANEL (IMPROVED CONTRAST) */
 .content {
   width: 65%;
-  background: #fafafa;        /* lighter background */
+  background: #fafafa;
   padding: 72px 64px;
-  max-width: 700px;
+  max-width: 720px;
 }
 
-/* SECTION SPACING */
+/* SECTIONS */
 section {
   margin-bottom: 56px;
 }
@@ -57,7 +56,7 @@ section {
 h2 {
   font-size: 26px;
   font-weight: 700;
-  color: #111;                /* darker heading */
+  color: #111;
   margin-bottom: 14px;
 }
 
@@ -65,7 +64,7 @@ h2 {
 p {
   font-size: 17px;
   line-height: 1.6;
-  color: #444;                /* softer than headings */
+  color: #444;
   max-width: 560px;
 }
 
@@ -86,10 +85,10 @@ p {
 /* CTA BUTTON */
 .cta-btn {
   display: inline-block;
-  margin-top: 8px;
-  padding: 12px 26px;
+  margin-top: 6px;
+  padding: 12px 28px;
   background: #111;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
@@ -116,4 +115,3 @@ p {
     padding: 48px 28px;
   }
 }
-
