@@ -4,32 +4,41 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: #0f172a;
   color: white;
+  overflow-x: hidden; /* prevents overflow */
 }
 
 /* NAVBAR */
 .navbar {
   position: fixed;
   width: 100%;
-  padding: 20px 60px;
+  padding: 20px 40px; /* FIXED (was 60px) */
   display: flex;
   justify-content: space-between;
+  align-items: center; /* ADDED */
   background: rgba(0,0,0,0.6);
   backdrop-filter: blur(10px);
   z-index: 100;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* CLEAN spacing */
+}
+
 .navbar a {
-  margin-left: 20px;
   text-decoration: none;
   color: white;
 }
 
+/* CONTACT BUTTON */
 .nav-btn {
   background: white;
   color: black;
-  padding: 8px 18px;
+  padding: 6px 16px; /* slightly tighter */
   border-radius: 999px;
   font-weight: 600;
+  transition: 0.25s;
 }
 
 .nav-btn:hover {
@@ -139,3 +148,4 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+``
