@@ -1,3 +1,4 @@
+
 const elements = document.querySelectorAll('.fade');
 
 window.addEventListener('scroll', () => {
