@@ -1,20 +1,27 @@
 
+/* GLOBAL FIX */
+* {
+  box-sizing: border-box;   /* ✅ THIS FIXES THE OVERFLOW */
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: #0f172a;
   color: white;
-  overflow-x: hidden; /* prevents overflow */
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
 .navbar {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 20px 40px; /* FIXED (was 60px) */
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* ADDED */
+  align-items: center;
   background: rgba(0,0,0,0.6);
   backdrop-filter: blur(10px);
   z-index: 100;
@@ -23,7 +30,7 @@ body {
 nav {
   display: flex;
   align-items: center;
-  gap: 20px; /* CLEAN spacing */
+  gap: 20px; /* cleaner spacing */
 }
 
 .navbar a {
@@ -31,11 +38,10 @@ nav {
   color: white;
 }
 
-/* CONTACT BUTTON */
 .nav-btn {
   background: white;
   color: black;
-  padding: 6px 16px; /* slightly tighter */
+  padding: 6px 16px;
   border-radius: 999px;
   font-weight: 600;
   transition: 0.25s;
@@ -50,6 +56,7 @@ nav {
   height: 100vh;
   background: url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688');
   background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,7 +95,7 @@ nav {
   font-weight: 600;
 }
 
-/* SECTION */
+/* SECTIONS */
 section {
   padding: 80px 60px;
 }
@@ -148,4 +155,3 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
-``
