@@ -25,11 +25,11 @@ body {
   z-index: 100;
 }
 
-/* ✅ UPDATED HERE (KEY CHANGE) */
+/* ✅ FINAL FIX (LEFT-ALIGNED VERSION) */
 .nav-inner {
-  max-width: 1400px;   /* was 1100px → now wider */
   width: 100%;
-  margin: 0 auto;
+  max-width: none;     /* ✅ removes centering restriction */
+  margin: 0;
 
   height: 100%;
 
@@ -37,7 +37,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 20px;
+  padding: 0 30px;     /* ✅ controls spacing instead */
 }
 
 /* NAV */
@@ -52,7 +52,7 @@ nav {
   color: white;
 }
 
-/* BUTTON */
+/* CONTACT BUTTON */
 .nav-btn {
   background: white;
   color: black !important;
