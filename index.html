@@ -2,152 +2,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bros5 Ltd - Real Estate</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #111;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #333;
-        }
-
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background: #575757;
-        }
-
-        .hero {
-            background: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa') no-repeat center center/cover;
-            height: 60vh;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .hero h1 {
-            background: rgba(0,0,0,0.6);
-            padding: 20px;
-        }
-
-        .section {
-            padding: 40px;
-            text-align: center;
-        }
-
-        .services, .properties {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: #f4f4f4;
-            padding: 20px;
-            margin: 10px;
-            width: 250px;
-            border-radius: 8px;
-        }
-
-        footer {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Bros5 LTD</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Bros5 Ltd</h1>
-    <p>Property Investment & Real Estate Services</p>
-</header>
+<div class="layout">
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#properties">Properties</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section class="hero">
-    <h1>Building Value Through Property</h1>
-</section>
-
-<section id="about" class="section">
-    <h2>About Us</h2>
-    <p>
-        Bros5 Ltd is a UK-based real estate company specialising in property investment, management, and development.
-        We focus on delivering high-quality residential properties while creating long-term value for clients and communities.
-    </p>
-</section>
-
-<section id="services" class="section">
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="card">
-            <h3>Property Investment</h3>
-            <p>We acquire and manage properties to deliver strong investment returns.</p>
-        </div>
-        <div class="card">
-            <h3>Lettings</h3>
-            <p>Providing reliable residential letting services across key areas.</p>
-        </div>
-        <div class="card">
-            <h3>Management</h3>
-            <p>Full property management to maintain high standards and efficiency.</p>
-        </div>
+  <!-- LEFT BRAND PANEL -->
+  <aside class="brand">
+    <div class="brand-inner">
+      <h1>Bros5<br>LTD</h1>
+      <p class="tagline">Property. Investment. Trust.</p>
     </div>
-</section>
+  </aside>
 
-<section id="properties" class="section">
-    <h2>Featured Properties</h2>
-    <div class="properties">
-        <div class="card">
-            <h3>London Apartment</h3>
-            <p>Modern 2-bedroom apartment in a prime location.</p>
-        </div>
-        <div class="card">
-            <h3>Family Home</h3>
-            <p>Spacious home ideal for families and long-term living.</p>
-        </div>
-        <div class="card">
-            <h3>City Studio</h3>
-            <p>Compact and stylish studio in central London.</p>
-        </div>
-    </div>
-</section>
+  <!-- RIGHT CONTENT -->
+  <main class="content">
 
-<section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>Email: info@bros5.co.uk</p>
-    <p>Phone: 07XXXXXXXXX</p>
-</section>
+    <section>
+      <h2>About Us</h2>
+      <p>
+        Bros5 LTD is a modern real estate company focused on sourcing, managing,
+        and delivering high‑quality property opportunities. We work with clients
+        to identify investments and homes that offer long‑term value.
+      </p>
+    </section>
 
-<footer>
-    <p>&copy; 2026 Bros5 Ltd</p>
-</footer>
+    <section>
+      <h2>Services</h2>
+      <ul class="services">
+        <li>Property sourcing & acquisition</li>
+        <li>Residential lettings support</li>
+        <li>Investment guidance</li>
+        <li>Property management</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Featured Properties</h2>
+
+      <div class="property">
+        <h3>2‑Bedroom Apartment – London</h3>
+        <p>Modern apartment in a prime location. Strong rental yield potential.</p>
+      </div>
+
+      <div class="property">
+        <h3>3‑Bedroom House – Kent</h3>
+        <p>Family home with spacious living and excellent transport links.</p>
+      </div>
+
+      <div class="property">
+        <h3>Studio Flat – Stratford</h3>
+        <p>Ideal for first‑time buyers or investors seeking steady returns.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Work With Us</h2>
+      <p>
+        Whether you're looking to invest, buy, or collaborate, we’re here to help.
+      </p>
+
+      <a href="contact.html" class="cta-btn">Get in Touch</a>
+    </section>
+
+  </main>
+
+</div>
 
 </body>
 </html>
