@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
 /* NAVBAR */
 .navbar {
   position: fixed;
@@ -17,16 +24,70 @@
   font-size: 14px;
 }
 
-/* CONTACT BUTTON (TOP RIGHT) */
+/* CONTACT BUTTON */
 .nav-btn {
   background: white;
   color: black !important;
   padding: 8px 18px;
   border-radius: 999px;
   font-weight: 600;
-  transition: all 0.25s ease;
 }
 
 .nav-btn:hover {
   transform: scale(1.05);
 }
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  text-align: center;
+  position: relative;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  margin: 10px 0 20px;
+  color: #ddd;
+}
+
+/* BUTTON */
+.btn {
+  background: white;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SECTION */
+section {
+  padding: 80px 60px;
+}
+
+/* SERVICES */
+.services-grid {
