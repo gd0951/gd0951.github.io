@@ -25,26 +25,23 @@ body {
   z-index: 100;
 }
 
-/* ✅ FINAL FIX (LEFT-ALIGNED VERSION) */
+/* ✅ FULL-WIDTH NATURAL ALIGNMENT */
 .nav-inner {
   width: 100%;
-  max-width: none;     /* ✅ removes centering restriction */
-  margin: 0;
-
   height: 100%;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* ✅ left & right alignment */
   align-items: center;
 
-  padding: 0 30px;     /* ✅ controls spacing instead */
+  padding: 0 20px; /* ✅ slight spacing from edges */
 }
 
 /* NAV */
 nav {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 
 .navbar a {
@@ -52,7 +49,7 @@ nav {
   color: white;
 }
 
-/* CONTACT BUTTON */
+/* BUTTON */
 .nav-btn {
   background: white;
   color: black !important;
@@ -109,7 +106,7 @@ nav {
 
 /* SECTIONS */
 section {
-  padding: 80px 60px;
+  padding: 100px 60px;
 }
 
 /* SERVICES */
