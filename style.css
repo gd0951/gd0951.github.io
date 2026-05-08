@@ -1,7 +1,7 @@
 
 /* GLOBAL FIX */
 * {
-  box-sizing: border-box;   /* ✅ THIS FIXES THE OVERFLOW */
+  box-sizing: border-box;
 }
 
 body {
@@ -18,19 +18,27 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 40px;
+  height: 70px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding: 0 30px; /* cleaner + prevents overflow */
+
   background: rgba(0,0,0,0.6);
   backdrop-filter: blur(10px);
+
   z-index: 100;
+  overflow: hidden; /* ✅ HARD FIX */
 }
 
+/* NAV LINKS */
 nav {
   display: flex;
   align-items: center;
-  gap: 20px; /* cleaner spacing */
+  gap: 16px;
+  flex-shrink: 0; /* ✅ stops pushing out */
 }
 
 .navbar a {
@@ -38,13 +46,15 @@ nav {
   color: white;
 }
 
+/* CONTACT BUTTON */
 .nav-btn {
   background: white;
-  color: black;
-  padding: 6px 16px;
+  color: black !important; /* ✅ black text */
+  padding: 6px 14px;
   border-radius: 999px;
   font-weight: 600;
-  transition: 0.25s;
+  white-space: nowrap; /* ✅ prevents button stretch */
+  display: inline-block;
 }
 
 .nav-btn:hover {
@@ -57,9 +67,11 @@ nav {
   background: url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688');
   background-size: cover;
   background-position: center;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   position: relative;
 }
 
@@ -95,7 +107,7 @@ nav {
   font-weight: 600;
 }
 
-/* SECTIONS */
+/* SECTION */
 section {
   padding: 80px 60px;
 }
